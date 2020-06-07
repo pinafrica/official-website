@@ -1,0 +1,29 @@
+{
+  "name": "official-website",
+  "version": "1.0.0",
+  "description": "The Official PINAFRICA website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinafrica/official-website.git"
+  },
+  "keywords": [
+    "website",
+    "pinafrica",
+    "official"
+  ],
+  "author": "pinafrica.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinafrica/official-website/issues"
+  },
+  "homepage": "https://github.com/pinafrica/official-website#readme",
+  "dependencies": {
+    "gatsby": "^2.23.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
