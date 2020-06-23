@@ -16,10 +16,10 @@ jobs:
         env:
           DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
         with:
-          flags: '-avzr --delete'
-          options: ''
-          ssh_options: ''
-          src: 'public/'
-          dest: 'benson@pinafrica.org:/var/www/html/development/'
+          flags: "-avzr --delete"
+          options: ""
+          ssh_options: ""
+          src: "/public/"
+          dest: "benson@pinafrica.org:/var/www/html/development/"
       - name: Display status from deploy
         run: echo "${{ steps.deploy.outputs.status }}"
