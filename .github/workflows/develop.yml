@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - master
+      - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          switches: -avzr
+          path: src/
+          remote_path: /var/www/html/development/
+          remote_host: ${{secrets.DEPLOY_HOST}}
+          remote_user: ${{secrets.DEPLOY_USER}}
+          remote_key: ${{secrets.DEPLOY_KEY}}
