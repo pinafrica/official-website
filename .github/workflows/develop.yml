@@ -6,7 +6,7 @@ on:
       - development
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
 
     steps:
       - name: Deploy to server
@@ -18,7 +18,7 @@ jobs:
           flags: '-avzr --delete'
           options: ''
           ssh_options: ''
-          src: '.'
+          src: 'public/'
           dest: 'benson@pinafrica.org:/var/www/html/development/'
       - name: Display status from deploy
         run: echo "${{ steps.deploy.outputs.status }}"
