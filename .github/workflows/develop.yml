@@ -18,7 +18,7 @@ jobs:
           flags: '-avzr --delete'
           options: ''
           ssh_options: ''
-          src: './public/'
+          src: '.'
           dest: 'benson@pinafrica.org:/var/www/html/development/'
       - name: Display status from deploy
         run: echo "${{ steps.deploy.outputs.status }}"
