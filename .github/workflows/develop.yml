@@ -4,19 +4,22 @@ on:
   push:
     branches-ignore:
       - development
-Jobs:
-  Deploy:
-    - name: Deploy to server
-      id: deploy
-      uses: Pendect/action-rsyncer@v1.1.0
-      env:
-        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
-      with:
-        flags: '-avzr --delete'
-        options: ''
-        ssh_options: ''
-        src: 'public/'
-        dest: 'benson@pinafrica.org:/var/www/html/development/'
-  Status:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server
+        id: deploy
+        uses: Pendect/action-rsyncer@v1.1.0
+        env:
+          DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+        with:
+          flags: '-avzr --delete'
+          options: ''
+          ssh_options: ''
+          src: 'public/'
+          dest: 'benson@pinafrica.org:/var/www/html/development/'
+  status:
     - name: Display status from deploy
       run: echo "${{ steps.deploy.outputs.status }}"
