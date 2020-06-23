@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - name: Deploy to server
         id: deploy
         uses: Pendect/action-rsyncer@v1.1.0
@@ -19,7 +20,7 @@ jobs:
           flags: "-avzr --delete"
           options: ""
           ssh_options: ""
-          src: "/public/"
+          src: "public/"
           dest: "benson@pinafrica.org:/var/www/html/development/"
       - name: Display status from deploy
         run: echo "${{ steps.deploy.outputs.status }}"
