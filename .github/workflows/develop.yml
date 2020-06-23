@@ -7,17 +7,6 @@ on:
       - staging
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v1
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
 
@@ -28,9 +17,9 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
         env:
-          FTP_SERVER: ftp.pinafrica.org
+          FTP_SERVER: pinafrica.org
           FTP_USERNAME: ${{secrets.DEPLOY_USER}}
           FTP_PASSWORD: ${{ secrets.DEPLOY_KEY }}
-          LOCAL_DIR: src/
+          LOCAL_DIR: public/
           REMOTE_DIR: /var/www/html/development/
 #         ARGS: --delete
