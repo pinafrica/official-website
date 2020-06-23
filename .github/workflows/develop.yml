@@ -21,5 +21,8 @@ jobs:
           src: 'public/'
           dest: 'benson@pinafrica.org:/var/www/html/development/'
   status:
-    - name: Display status from deploy
-      run: echo "${{ steps.deploy.outputs.status }}"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display status from deploy
+        run: echo "${{ steps.deploy.outputs.status }}"
