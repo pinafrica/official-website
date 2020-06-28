@@ -23,7 +23,9 @@
   "homepage": "https://github.com/pinafrica/official-website#readme",
   "dependencies": {
     "gatsby": "^2.23.1",
+    "gatsby-plugin-react-helmet": "^3.3.6",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
   }
 }
