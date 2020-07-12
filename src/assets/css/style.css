@@ -21671,7 +21671,7 @@
 }
 
 .site-header .main-menu {
-  margin: 0 -18px;
+  margin: 0 5px;
 }
 
 @media (min-width: 992px) {
@@ -21688,12 +21688,12 @@
     font-weight: 400;
     letter-spacing: -0.4px;
     color: #1f1f1f;
-    padding: 18px;
+    padding: 8px;
   }
 }
 
 .main-menu > li > a:hover {
-  color: #4ebe86;
+  color: #ffa500;
 }
 
 @media (min-width: 992px) {
@@ -22005,7 +22005,7 @@
 
 @media (min-width: 1200px) {
   .hero-content h1 {
-    font-size: 70px;
+    font-size: 60px;
     line-height: 70px;
   }
 }

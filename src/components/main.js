@@ -11,9 +11,8 @@ const Main = () => {
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-7 col-12">
           <div class="hero-content">
-            <h1>Learn User Centered Design</h1>
-            <p>Create custom landing pages with Shades that convert more visitors than any website—no coding required.</p>
-            <div class="hero-btn"><a href="/" class="btn btn--orange btn--hover-shine">Get Started</a></div>
+            <h1>Using Technology As A Tool</h1>
+            <p>Creating an enabling environment for ...</p>
           </div>
         </div>
 

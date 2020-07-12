@@ -10,10 +10,10 @@ const About = () => {
                 <h2>About</h2>
             </div>
             <div class='row about'>
-                <div class='col-xl-6 col-lg-6 col-md-7 col-12 about-intro'>
+                <div class='col-xl-6 col-lg-6 col-12 about-intro'>
                     <img src='/hero.png' />
                 </div>
-                <div class='col-xl-6 col-lg-6 col-md-7 col-12'>
+                <div class='col-xl-6 col-lg-6 col-12'>
                     <h3>Who We Are</h3>
                     <span>
                         Lorem Aenean nec quam efficitur, volutpat felis quis, commodo lacus. Morbi feugiat orci vel urna semper, 
@@ -42,10 +42,10 @@ const About = () => {
                     <img src='/hero.png' />
                 </div>
             </div>
-            <div class='about'>
+            <div class=''>
                 <h3 class='center'>Our Belief</h3>
                 <div class='row'>
-                    <div class='col-xl-4 col-lg-4 col-md-6 col-12'>
+                    <div class='col-xl-4 col-lg-4 col-12'>
                         <div class='belief'>
                             <div class='svg'>
                                 <svg viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@ const About = () => {
                     <div class='col-xl-4 col-lg-4 col-md-6 col-12'>
                         b
                     </div>
-                    <div class='col-xl-4 col-lg-4 col-md-6 col-12'>
+                    <div class='col-xl-4 col-lg-4 col-12'>
                         <div class='belief'>
                             <div class='svg'>
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -30,13 +30,14 @@
 }
 .about .about-intro{
     margin: 0 auto;
+    padding: 10px;
 }
 .about span{
     font-size: 14px;
     color: #8b8787;
     margin: 1em 0;
 }
-.about .belief{
+.belief{
     margin: 2em 0;
     padding: 10px;
     display: flex;
