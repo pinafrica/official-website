@@ -1,5 +1,12 @@
 import React from 'react'
 import Style from './styles'
+import {Link} from 'gatsby'
+
+const ListLink = props => (
+    <li class={props.class}>
+      <Link to={props.to}>{props.children}</Link>
+    </li>
+  )
 
 const Header = () => {
     return (
@@ -15,39 +22,19 @@ const Header = () => {
                     </div>
                     <div class="col-sm-8 col-lg-2 col-xl-2 d-none d-sm-block order-lg-3">
                         <div class="header-btns justify-content-end">
-                            <a href="/" class="btn btn-link">Sign In</a>
+                            <ListLink to='/' class="btn btn-link">Sign In</ListLink>
                         </div>
                     </div>
                     <div class="col-sm-1 col-6 col-lg-6 col-xl-6 offset-lg-2  position-static order-lg-2">
                         <div class="main-navigation">
                             <ul class="main-menu">
-                                <li class="menu-item has-dropdown">
-                                    <a href="#features">Free Landing Pages</a>
-                                        <ul class="menu-dropdown">
-                                            <li class="single-item">
-                                                <a href="/">
-                                                <h3>Mobile Application</h3> 
-                                                <p>Best for Mobile App Presentation</p>
-                                                </a>
-                                            </li>
-                                            <li class="single-item">
-                                                <a href="/">
-                                                    <h3>Web Application</h3>
-                                                    <p>Best for Mobile App Presentation</p>
-                                                </a> 
-                                            </li>
-                                            <li class="single-item">
-                                                <a href="/">
-                                                    <h3>SaaS Application</h3>
-                                                <p>Best for Mobile App Presentation</p>
-                                            </a> 
-                                            </li>
-                                        </ul>
-                                    </li>
-                                <li class="menu-item "><a href="#features">Course topics</a></li>
-                        
-                                <li class="menu-item"><a href="/">Student stories</a></li>
-                                </ul>
+                                <ListLink to='/'>Home</ListLink>
+                                <ListLink to='#features' class='menu-item has-dropdown'> What we do </ListLink>
+                                <ListLink to='/projects'> Projects </ListLink>
+                                <ListLink to='/volunteer'> Volunteer </ListLink>
+                                <ListLink to='/team'> Team </ListLink>
+                                <ListLink to='/contact'> Contact </ListLink>
+                            </ul>
                         </div>
                         <div class="mobile-menu"></div>
                     </div>

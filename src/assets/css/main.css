@@ -1,0 +1,70 @@
+.card.fact{
+    margin: 1em;
+    width: 18rem;
+}
+.card-img{
+    width: 3em !important;
+    height: 3em;
+    border-radius: 30px !important;
+    margin-top: -1em;
+}
+
+.btn.btn-card{
+    color: #ffffff;
+    background-color: #ffa500;
+    border-radius: 30px;
+    border-color: #ffa500;
+    position: absolute;
+    bottom: 10px;
+}
+.intro{
+    background-color: #ffa500;
+    width: 100%;
+    align-content: left;
+    padding: 1em;
+}
+.about{
+    margin: 4em;
+    width: 100%;
+    align-content: center;
+}
+.about .about-intro{
+    margin: 0 auto;
+}
+.about span{
+    font-size: 14px;
+    color: #8b8787;
+    margin: 1em 0;
+}
+.about .belief{
+    margin: 2em 0;
+    padding: 10px;
+    display: flex;
+}
+.belief .svg{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #c0c0c0;
+    border-radius: 40px;
+    align-content: center;
+}
+.belief svg{
+    color: #ffa500;
+    width: 100%;
+    padding: 10px 5px;
+    height: 100%;
+}
+.belief .text{
+    margin: 0 4px;
+}
+/* .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      /* // pointer-events: none; */
+  /* } */
+  /* .dropdown-toggle::after {
+      border: 0 !important;
+  } */ 

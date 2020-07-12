@@ -1,8 +1,8 @@
 import React from 'react'
 import {Helmet} from 'react-helmet'
-import '../assets/css/custom.css'
 import '../assets/css/settings.css'
 import '../assets/css/style.css'
+import '../assets/css/main.css'
 //fonts
 import '../assets/fonts/ep-icon-fonts/css/style.css'
 import '../assets/fonts/fontawesome-5/css/all.min.css'

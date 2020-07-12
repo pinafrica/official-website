@@ -14,14 +14,6 @@ const About = () => {
                 <img src="/course-yelloow-svg.svg" alt="" />
             </div>
             <div class="container pt-lg--85">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title section-black">
-                            <h2>About Us</h2>
-                            <p>We are asdf asdf </p>
-                        </div>
-                    </div>
-                </div>
                 <div class="accordion course-accordion" id="accordionExample" >
                     <Strategies />
                     <Strategies />
