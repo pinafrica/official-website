@@ -33,7 +33,7 @@ const getFactsData = (data) => {
                 <div class="card-body">
                     <h5 class="card-title">{item.title}</h5>
                     <p class="card-text">{item.body}</p>
-                    <Button link = {item.link} class='btn btn-card'/>
+                    <Button link = {item.link} class='btn btn-card' value='Read More'/>
                 </div>
             </div>
         )

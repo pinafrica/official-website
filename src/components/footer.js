@@ -1,6 +1,13 @@
 import React from 'react'
+import Button from './button'
+import { Link } from 'gatsby'
 
 const Footer = () => {
+    const ListLink = props => (
+        <li class={props.class}>
+          <Link to={props.to}>{props.children}</Link>
+        </li>
+      )
     return (
         <div class="footer-section position-relative">
             <div class="container margin-decrese">
@@ -9,59 +16,66 @@ const Footer = () => {
                         <div class="footer-content">
                             <span class="title-small-text">Time to take action</span>
                             <h2>Volunteer with us now</h2>
-                            <div class="footer-btn"><a href="/" class="btn btn--orange btn--hover-shine">Get Started</a></div>
+                            <div class="footer-btn">
+                                <Button link = '/volunteer' class='btn btn-card btn--hover-shine' value='Get Started'/>
+                            </div>
                         </div>
                     </div>
-                    </div>
+                </div>
                     <span class="section-devider mt--130"></span>
-                <div class="row mt--70">
-                    <div class="col-lg-4 col-xl-4 col-sm-6 col-margin">
-                        <span class="ft-title-sm">Help menu</span>
-                        <div class="row">
-                            <div class="col-lg-5 col-4">
-                                <ul class="footer-list">
-                                    <li><a href="/">About</a></li>
-                                    <li><a href="/">Features</a></li>
-                                    <li><a href="/">Works</a></li>
-                                    <li><a href="/">Career</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-7 col-8">
-                                <ul class="footer-list">
-                                    <li><a href="/">Contact</a></li>
-                                    <li><a href="/">Help &amp; Support</a></li>
-                                    <li><a href="/">Privacy Policy</a></li>
-                                    <li><a href="/">Terms &amp; Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xl-3 col-sm-6 col-margin">
-                        <span class="ft-title-sm">Product</span>
-                        <ul class="footer-list">
-                            <li><a href="/">Essential Landing Page</a></li>
-                            <li><a href="/">Alpha Dashboard Pro</a></li>
-                            <li><a href="/">Karnel Admin Dashboard</a></li>
-                            <li><a href="/">Gray UI Kit</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-xl-5 col-margin">
-                        <div class="ft-newsletter-box">
-                            <span class="ft-title-sm">Subscribe to our newsletter</span>
-                            <p>Subscribe to get lastest offers, news and events announcements. No spam in your inbox.</p>
-                            <form action="/">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter your email address" />
-                                <button class="submit-btn"><i class="icon icon-tail-right" alt='icon'></i></button>
-                            </div>
-                            </form>
-                        </div>
-                    </div>
-                    </div>
+                
             </div>
-            <div class="shape-holder footer-shape-1" data-aos="zoom-in-left" data-aos-once="true"><img src="/cta-shape.svg" alt="" /></div>
-            <div class="shape-holder footer-shape-2" data-aos="zoom-in-right" data-aos-once="true"><img src="/footer-shape.svg" alt="" /></div>
+            <div class='contain'>
+                <div class="container text-center text-md-left mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-4 col-lg-3 col-xl-4 mx-auto">
+                            <h6 class="text-uppercase font-weight-bold">Pearl Impact Networks Africa</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                            <hr class="deep-purple accent-2  mt-0 d-inline-block mx-auto"/>
+                            <ListLink to='/' class='main-menu'>Home</ListLink>
+                            <ListLink to='/about' class='main-menu'> What we do </ListLink>
+                            <ListLink to='/projects'class='main-menu'> Projects </ListLink>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
+                            <ListLink to='/contact'class='main-menu'> Contact </ListLink>
+                            <ListLink to='/volunteer' class='main-menu'> Volunteer </ListLink>
+                            <ListLink to='/team'class='main-menu'> Team </ListLink>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
+                            <p>
+                            <i class="fas fa-envelope mr-3"> </i>
+                                hello@pinafrica.org
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row py-4 d-flex align-items-center social">
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="mb-0">Get connected with us on social networks!</h6>
+                        </div>
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                            <a class="fb-ic" href='/facebook'>
+                                <i class="fab fa-facebook-f white-text mr-4"> </i>
+                            </a>
+                            <a class="tw-ic" href='twitter'>
+                                <i class="fab fa-twitter white-text mr-4"> </i>
+                            </a>
+                            <a class="li-ic" href='linkedin'>
+                                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                            </a>
+                            <a class="ins-ic" href='instagram'>
+                                <i class="fab fa-instagram white-text"> </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="shape-holder footer-shape-1" data-aos="zoom-in-left" data-aos-once="true"><img src="/cta-shape.svg" alt="" /></div>
+                    <div class="shape-holder footer-shape-2" data-aos="zoom-in-right" data-aos-once="true"><img src="/footer-shape.svg" alt="" /></div>
+                </div>
+            </div>
         </div>
     )
 }

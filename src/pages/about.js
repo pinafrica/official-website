@@ -1,11 +1,11 @@
 import React from 'react'
 import Strategies from '../components/strategies'
-import Header from '../components/header'
+import Layout from '../components/layout'
 
 const About = () => {
     return (
-        <section class='container'>
-            <Header />
+        <Layout>
+            <div class='container'>
             <div class='intro'>
                 <h2>About</h2>
             </div>
@@ -102,7 +102,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </section>
+            </div>
+        </Layout>
     )
 }
 

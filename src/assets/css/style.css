@@ -21692,10 +21692,6 @@
   }
 }
 
-.main-menu > li > a:hover {
-  color: #ffa500;
-}
-
 @media (min-width: 992px) {
   .main-menu .has-dropdown {
     position: relative;
@@ -23278,7 +23274,6 @@
 .footer-section {
   border-bottom: 1px solid #e5e5e5;
   padding-top: 70px;
-  padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {

@@ -9,12 +9,19 @@
     margin-top: -1em;
 }
 
+li.main-menu a{
+    color: #000000;
+}
+
+li.main-menu a:hover {
+  color: #ffa500;
+  text-decoration: none;
+}
 .btn.btn-card{
     color: #ffffff;
     background-color: #ffa500;
     border-radius: 30px;
     border-color: #ffa500;
-    position: absolute;
     bottom: 10px;
 }
 .intro{
@@ -25,7 +32,6 @@
 }
 .about{
     margin: 4em;
-    width: 100%;
     align-content: center;
 }
 .about .about-intro{
@@ -58,14 +64,31 @@
 .belief .text{
     margin: 0 4px;
 }
-/* .dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-      /* // pointer-events: none; */
-  /* } */
-  /* .dropdown-toggle::after {
-      border: 0 !important;
-  } */ 
+.contain{
+    background-color: #eef4f5;
+    padding: 5px 0;
+}
+.footer-section li.main-menu {
+    margin: 10px 0;
+    display: flex;
+}
+.footer-section i{
+    color: #ffa500;
+}
+.footer-section .social i{
+    font-size: 22px;
+}
+.footer-section .social i:hover{
+    color: #000000;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .footer-section .col-lg-2{
+        width: 50%;
+        justify-content: center;
+        display: grid;
+    }
+    .footer-section li.main-menu {
+        margin: 5px 0;
+    }
+}
