@@ -1,6 +1,7 @@
 .card.fact{
     margin: 1em;
-    width: 18rem;
+    width: 100%;
+    flex: 0 0 30%;
 }
 .card-img{
     width: 3em !important;
@@ -19,10 +20,16 @@ li.main-menu a:hover {
 }
 .btn.btn-card{
     color: #ffffff;
-    background-color: #ffa500;
     border-radius: 30px;
-    border-color: #ffa500;
+    position: absolute;
     bottom: 10px;
+    margin-left: -15%;
+}
+.orange{
+    background-color: #ffa500 !important;
+}
+.gray{
+    background-color: #dad2c4 !important;
 }
 .intro{
     background-color: #ffa500;

@@ -11,6 +11,12 @@
             "body": "A future where opportunity is accessible for all and females are prepared, can stand up for, express themselves and compete favourably with their counterparts",
             "img": "./hero.png",
             "link": "/vision"
+        },
+        {
+            "title": "Volunteer",
+            "body": "We need you, as we can not do this alone. Join us today as we make the world a better place",
+            "img": "./hero.png",
+            "link": "/get-involved"
         }
     ]
 }

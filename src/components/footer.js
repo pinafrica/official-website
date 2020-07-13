@@ -10,21 +10,7 @@ const Footer = () => {
       )
     return (
         <div class="footer-section position-relative">
-            <div class="container margin-decrese">
-                <div class="row justify-content-center">
-                    <div class="col-md-9 col-lg-8 col-xl-7" data-aos="flip-down" data-aos-delay="55" data-aos-duration="2000" data-aos-once="true">
-                        <div class="footer-content">
-                            <span class="title-small-text">Time to take action</span>
-                            <h2>Volunteer with us now</h2>
-                            <div class="footer-btn">
-                                <Button link = '/volunteer' class='btn btn-card btn--hover-shine' value='Get Started'/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <span class="section-devider mt--130"></span>
-                
-            </div>
+            
             <div class='contain'>
                 <div class="container text-center text-md-left mt-5">
                     <div class="row mt-3">
@@ -42,7 +28,7 @@ const Footer = () => {
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
                             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
                             <ListLink to='/contact'class='main-menu'> Contact </ListLink>
-                            <ListLink to='/volunteer' class='main-menu'> Volunteer </ListLink>
+                            <ListLink to='/get-involved' class='main-menu'> Volunteer </ListLink>
                             <ListLink to='/team'class='main-menu'> Team </ListLink>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">

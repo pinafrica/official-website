@@ -28,12 +28,12 @@ const getFactsData = (data) => {
     const dataItemsArray = []
     data.dataJson.facts.forEach(item => {
         dataItemsArray.push(
-            <div class="card fact text-center col-md-6 col-lg-3 mb--30">
+            <div class="card fact text-center col-md-6 mb--30">
                 <img src={item.img} class="card-img mx-auto d-block" alt="..."></img>
                 <div class="card-body">
                     <h5 class="card-title">{item.title}</h5>
                     <p class="card-text">{item.body}</p>
-                    <Button link = {item.link} class='btn btn-card' value='Read More'/>
+                    <Button link = {item.link} class='btn btn-card gray' value='Read More'/>
                 </div>
             </div>
         )

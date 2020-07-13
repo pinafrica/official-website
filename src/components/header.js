@@ -31,7 +31,7 @@ const Header = () => {
                             <ListLink to='/' class='main-menu'>Home</ListLink>
                             <ListLink to='/about' class='main-menu'> What we do </ListLink>
                             <ListLink to='/projects'class='main-menu'> Projects </ListLink>
-                            <ListLink to='/volunteer' class='main-menu'> Volunteer </ListLink>
+                            <ListLink to='/get-involved' class='main-menu'> Volunteer </ListLink>
                             <ListLink to='/team'class='main-menu'> Team </ListLink>
                             <ListLink to='/contact'class='main-menu'> Contact </ListLink>
                         </ul>
