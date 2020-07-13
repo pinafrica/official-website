@@ -37,15 +37,15 @@ li.main-menu a:hover {
     align-content: left;
     padding: 1em;
 }
-.about{
+.margin-4m{
     margin: 4em;
     align-content: center;
 }
-.about .about-intro{
+.row.margin-4m .about-intro{
     margin: 0 auto;
     padding: 10px;
 }
-.about span{
+.row.margin-4m span{
     font-size: 14px;
     color: #8b8787;
     margin: 1em 0;
@@ -55,18 +55,26 @@ li.main-menu a:hover {
     padding: 10px;
     display: flex;
 }
-.belief .svg{
+.svg{
     width: 180px;
     height: 50px;
     border: 1px solid #c0c0c0;
     border-radius: 40px;
     align-content: center;
 }
-.belief svg{
+.svg svg, .svg i{
     color: #ffa500;
     width: 100%;
     padding: 10px 5px;
     height: 100%;
+}
+.svg i{
+    font-size: 50px;
+}
+.svg.get-involved{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
 }
 .belief .text{
     margin: 0 4px;

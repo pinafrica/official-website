@@ -9,7 +9,7 @@ const About = () => {
             <div class='intro'>
                 <h2>About</h2>
             </div>
-            <div class='row about'>
+            <div class='row margin-4m'>
                 <div class='col-xl-6 col-lg-6 col-12 about-intro'>
                     <img src='/hero.png' />
                 </div>
@@ -25,7 +25,7 @@ const About = () => {
                     </span>
                 </div>
             </div>
-            <div class='row about'>
+            <div class='row margin-4m'>
                 <div class='col-xl-6 col-lg-6 col-md-7 col-12'>
                 <h3>Vision and Mision</h3>
                     <h6>Vision</h6>
