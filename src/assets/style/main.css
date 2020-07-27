@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(19, 3, 63) !important;
+}
+.page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.main-content{
+    color: #fff;
+    margin: 40px 0;
+}
+.btn{
+    border-radius: 20px !important;
+    background-color: #0d2977 !important;
+    color: #fff !important;
+}
+.intro{
+    margin: 50px 0;
+}
+.margin-4px{
+    margin: 40px 0;
+}
+#email{
+    background: transparent;
+    width: 300px;
+}
+#name{
+    display: block;
+    width: 90%;
+    background: transparent;
+}
+.subscribe{
+    margin: 10px 0;
+    height: 40px;
+    border-width: 0 0 1px !important;
+}
+.clock__display {
+    display: inline-block;
+    align-items: center;
+    margin: 0 20px;
+}
+.clock-wrapper{
+    display: flex;
+}
+.clock{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.subscribed{
+    align-content: center;
+    color: #fff;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.subscribed h3{
+}

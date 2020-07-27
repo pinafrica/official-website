@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{oEG8:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return s}));var a=t("q1tI"),r=t.n(a),c=t("d3zx"),l=t("DkAR");function s(){return r.a.createElement(l.a,null,r.a.createElement("div",{class:"page"},r.a.createElement(c.a,null),r.a.createElement("div",{class:"subscribed"},r.a.createElement("h3",null,"Thanks for Subscribing to Our News Letter"))))}}}]);
+//# sourceMappingURL=component---src-pages-we-got-you-js-e9b5c912652f909a52c1.js.map

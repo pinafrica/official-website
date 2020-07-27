@@ -1,7 +1,20 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const contactRoute = require('./contact-us')
+const mongoose = require('mongoose')
+require('dotenv').config()
 const app = express()
+
+mongoose.set('useCreateIndex', true);
+
+const uri = process.env.DBConnect;
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true})
+.then(() => {
+    console.log('Successfully connected')
+})
+.catch((err) => {
+    console.log(`Couldn't connect ${err}`)
+})
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*')
@@ -13,6 +26,11 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-// app.use('/v1/api/contact-us', contactRoute)
+app.use('/v1/api/contact-us', contactRoute.retrieveData)
+
+//for testing, remove when done
+app.get('/', (req, res) => {
+    res.send('yeah')
+})
 
 module.exports = app
