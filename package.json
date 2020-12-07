@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/pinafrica/official-website#readme",
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "gatsby": "^2.23.1",
+    "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

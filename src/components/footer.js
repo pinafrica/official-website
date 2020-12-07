@@ -11,17 +11,17 @@ const Footer = () => {
     return (
         <div class = "footer">
             <div class="footer-icons">
-                <ListLink to="" class="footer-social_media">
+                <ListLink to="https://web.facebook.com/pinafricadotorg" class="footer-social_media">
                     <img src="./facebook.svg" alt="Facebook Pinafrica" />
                 </ListLink>
-                <ListLink to="" class="footer-social_media">
-                    <img src="./twitter.svg" alt="Facebook Pinafrica" />
+                <ListLink to="https://twitter.com/pinafricadotorg" class="footer-social_media">
+                    <img src="./twitter.svg" alt="Twitter Pinafrica" />
                 </ListLink>
-                <ListLink to="" class="footer-social_media">
-                    <img src="./linkedin.svg" alt="Facebook Pinafrica" />
+                <ListLink to="https://www.linkedin.com/company/pinafricadotorg" class="footer-social_media">
+                    <img src="./linkedin.svg" alt="Linkedin Pinafrica" />
                 </ListLink>
-                <ListLink to="" class="footer-social_media">
-                    <img src="./instagram.svg" alt="Facebook Pinafrica" />
+                <ListLink to="https://www.instagram.com/pinafricadotorg/" class="footer-social_media">
+                    <img src="./instagram.svg" alt="Instagram Pinafrica" />
                 </ListLink>
             </div>
             <span> &copy; PINAFRICA 2020</span>
