@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from '../components/layout'
-import Button from '../components/button'
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
             <span>We are in our Garage Phase. But we are excited about the amazing things we would be doing. And we would be sharing every moment of our journey. What you see here is just the beginning of that journey. </span>
             <span>Every time you come back here, something would have changed on the site.</span>
           </div>
-          <Button />
+          <button>Learn More</button>
         </div>
       </main>
     </Layout>
