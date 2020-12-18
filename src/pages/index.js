@@ -16,7 +16,7 @@ export default function Home() {
           </div>
           <button type="button" data-toggle="modal" data-target="#subscribeModal">Learn More</button>
         </div>
-        <div class="subscribe">
+        {/* <div class="subscribe">
           <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
     </Layout>
   )

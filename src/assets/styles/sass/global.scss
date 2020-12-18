@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+// Set your brand colors
+$purple: #732CCD;
+$black: #000000;
+$gray: #999999;
+$white: #FFFFFF;
+
+// Update Bulma's global variables
+$family-dosis: 'Dosis', sans-serif;
+$family-roboto: 'Roboto', sans-serif;
+$family-great-vibes: 'Great Vibes', cursive;
+$primary: $purple;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+.header-image img{
+    margin: 0 auto;
+    display: block;
+}
+
+.main-intro {
+    span{
+        display: block;
+        padding: 5px;
+        text-align: center;
+        color: $black;
+    }
+    #main-intro-hello{
+        font-family: $family-dosis;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    #main-intro-we_are{
+        font-family: $family-roboto;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    #main-intro-garage{
+        font-family: $family-great-vibes;
+        font-size: 48px;
+        line-height: 1.5;
+    }
+    button{
+        display: block;
+        background-color: $purple;
+        color: $white;
+        margin: 0 auto;
+        height: 43px;
+        width: 228px;
+        font-family: $family-dosis;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.4px;
+    }
+}
+.main-intro-text{
+    padding: 20px 0;
+    font-family: $family-roboto;
+    font-size: 14px;
+    line-height: 1.3;
+
+    span{
+        padding: 2px;
+    }
+}
+
+
+/* modal */
+.modal-header{
+    height: 206px;
+    background-color: $purple;
+}
+.modal-title{
+    color: $white;
+    text-align: center;
+    font-family: $family-roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 20px;
+}
+.modal-body .modal-body-intro{
+    font-family: $family-roboto;
+    font-size: 13px;
+    line-height: 1.33;
+    text-align: center;
+    margin: 30px;
+    display: table;
+}
+.modal-body .subscribe-form-fields{
+    display: grid;
+    width: 252px;
+    margin: 0 auto;
+}
+.modal-body .subscribe-form-fields input[type="text"]{
+    margin: 5px;
+    font-family: $family-roboto;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $gray;
+}
+
+/* footer */
+.footer {
+    .footer-icons{
+        margin: 0 auto;
+        display: table;
+    }
+    .footer-social_media{
+        display: inline-block;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer-social_media img{
+        margin: 10px 5px;
+        width: 36px;
+        height: 36px;
+    }
+    span{
+        text-align: center;
+        display: block;
+        font-family: $family-dosis;
+        font-size: 14px;
+        color: $black;
+    }
+}

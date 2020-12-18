@@ -1,4 +1,3 @@
-import "./node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-import "./src/assets/styles/global.css"
+// import "./node_modules/bulma/bulma.sass"
+import "./src/assets/styles/css/global.css"
 
