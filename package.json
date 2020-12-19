@@ -4,9 +4,7 @@
   "description": "The Official PINAFRICA website",
   "main": "index.js",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url src/assets/styles/sass/global.scss src/assets/styles/css/global.css",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,11 +22,9 @@
   },
   "homepage": "https://github.com/pinafrica/official-website#readme",
   "dependencies": {
-    "bulma": "^0.9.1",
+    "bootstrap": "^4.5.3",
     "gatsby": "^2.23.1",
-    "gatsby-cli": "^2.16.1",
     "jquery": "^3.5.1",
-    "node-sass": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
