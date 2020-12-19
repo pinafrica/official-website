@@ -1,0 +1,10 @@
+## Add commit type
+## e.g (feat): new feature
+<type>[optional scope]: <description>
+
+## Add commit body
+## Explain commit
+[optional body]
+
+## Add commit footer
+[optional footer]
