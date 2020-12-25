@@ -3,8 +3,8 @@
 <type>[optional scope]: <description>
 
 ## Add commit body
-## Explain commit
+## Here you explain your changes and why you made them
 [optional body]
 
-## Add commit footer
+## Add commit footer e.g. "Closes #23"
 [optional footer]
