@@ -28,8 +28,10 @@
     "bulma": "^0.9.1",
     "gatsby": "^2.23.1",
     "gatsby-cli": "^2.16.1",
+    "gatsby-plugin-react-helmet": "^3.7.0",
     "node-sass": "^5.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
   }
 }

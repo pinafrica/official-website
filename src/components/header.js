@@ -1,4 +1,5 @@
 import React from 'react'
+import IncludeHelmet from './react-helmet'
 
 // import {Link} from 'gatsby'
 
@@ -9,6 +10,8 @@ import React from 'react'
 // }
 const Header = () => {
     return (
+        <>
+        <IncludeHelmet />
         <div class = "header">
             <div class = "header-image">
                 <a href="/">
@@ -16,6 +19,7 @@ const Header = () => {
                 </a>
             </div>
         </div>
+        </>
     )
 }
 export default Header
