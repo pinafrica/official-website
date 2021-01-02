@@ -1,32 +1,44 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 const ListLink = props => (
-    <li class={props.class}>
-      <Link to={props.to}>{props.children}</Link>
-    </li>
-  )
+  <li className={props.class}>
+    <Link to={props.to}>{props.children}</Link>
+  </li>
+)
 
 const Footer = () => {
-    return (
-        <div class = "footer">
-            <div class="footer-icons">
-                <ListLink to="https://web.facebook.com/pinafricadotorg" class="footer-social_media">
-                    <img src="./static/facebook.svg" alt="Facebook Pinafrica" />
-                </ListLink>
-                <ListLink to="https://twitter.com/pinafricadotorg" class="footer-social_media">
-                    <img src="./static/twitter.svg" alt="Twitter Pinafrica" />
-                </ListLink>
-                <ListLink to="https://www.linkedin.com/company/pinafricadotorg" class="footer-social_media">
-                    <img src="./static/linkedin.svg" alt="Linkedin Pinafrica" />
-                </ListLink>
-                <ListLink to="https://www.instagram.com/pinafricadotorg/" class="footer-social_media">
-                    <img src="./static/instagram.svg" alt="Instagram Pinafrica" />
-                </ListLink>
-            </div>
-            <span> &copy; PINAFRICA 2020</span>
-        </div>
-    )
+  return (
+    <div className='footer'>
+      <div className='footer-icons'>
+        <ListLink
+          to='https://web.facebook.com/pinafricadotorg'
+          class='footer-social_media'
+        >
+          <img src='./static/facebook.svg' alt='Facebook Pinafrica' />
+        </ListLink>
+        <ListLink
+          to='https://twitter.com/pinafricadotorg'
+          class='footer-social_media'
+        >
+          <img src='./static/twitter.svg' alt='Twitter Pinafrica' />
+        </ListLink>
+        <ListLink
+          to='https://www.linkedin.com/company/pinafricadotorg'
+          class='footer-social_media'
+        >
+          <img src='./static/linkedin.svg' alt='Linkedin Pinafrica' />
+        </ListLink>
+        <ListLink
+          to='https://www.instagram.com/pinafricadotorg/'
+          class='footer-social_media'
+        >
+          <img src='./static/instagram.svg' alt='Instagram Pinafrica' />
+        </ListLink>
+      </div>
+      <span> &copy; PINAFRICA 2020</span>
+    </div>
+  )
 }
 
 export default Footer
