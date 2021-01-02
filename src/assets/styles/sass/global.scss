@@ -33,7 +33,50 @@ $input-shadow: none;
 @import "../../../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../../../node_modules/bulma/sass/layout/section.sass";
 
+body {
+    font-family: 'Roboto';
+    color: #000000;
+}
+
+.container {
+    background-image: url('../../../../public/static/background-image.svg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.widget-button {
+    background-color: $purple;
+    color: $white !important;
+    display: block;
+    width: 250px;
+    height: 3.2rem;
+    margin: 0 auto;
+    padding: 01rem 0rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.main {
+    margin-top: -3rem;
+}
+
 .logo img {
     width: 60%;
     margin: auto;
+}
+
+/** footer style **/
+.page-footer{
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    display: table;
+
+        .footer-icons{
+            margin: 0 0 1rem 0;
+        }
+
+        .footer-social_media{
+                margin: .5rem;
+        }
 }
