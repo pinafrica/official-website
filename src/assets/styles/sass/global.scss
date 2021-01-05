@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import "../../../../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+// Set your brand colors
+$purple: #732CCD;
+$black: #000000;
+$gray: #999999;
+$white: #FFFFFF;
+
+// Update Bulma's global variables
+$family-dosis: 'Dosis', sans-serif;
+$family-roboto: 'Roboto', sans-serif;
+$family-great-vibes: 'Great Vibes', cursive;
+$primary: $purple;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// What we need from Bulma - We can remove the ones we don't needd
+@import "../../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../../../node_modules/bulma/sass/base/_all.sass";
+@import "../../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../../node_modules/bulma/sass/elements/container.sass";
+@import "../../../../node_modules/bulma/sass/elements/title.sass";
+@import "../../../../node_modules/bulma/sass/form/_all.sass";
+@import "../../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../../../node_modules/bulma/sass/layout/section.sass";
+
+body {
+    font-family: 'Roboto';
+    color: #000000;
+}
+
+.container {
+    background-image: url('../../../../public/static/background-image.svg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.widget-button {
+    background-color: $purple;
+    color: $white !important;
+    display: block;
+    width: 250px;
+    height: 3.2rem;
+    margin: 0 auto;
+    padding: 01rem 0rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.main {
+    margin-top: -3rem;
+}
+
+.logo img {
+    width: 60%;
+    margin: auto;
+}
+
+/** footer style **/
+.page-footer{
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    display: table;
+
+        .footer-icons{
+            margin: 0 0 1rem 0;
+        }
+
+        .footer-social_media{
+                margin: .5rem;
+        }
+}

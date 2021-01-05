@@ -9,17 +9,19 @@ import IncludeHelmet from './react-helmet'
 //     </li>
 // }
 const Header = () => {
-    return (
-        <>
-        <IncludeHelmet />
-        <div class = "header">
-            <div class = "header-image">
-                <a href="/">
-                    <img src = "./logo.svg" alt="pinafrica" />
-                </a>
-            </div>
+  return (
+    <>
+      <IncludeHelmet />
+      <section className='header'>
+        <div className='columns is-centered'>
+          <div className='column mt-6'>
+            <figure className='image logo'>
+              <img src='./static/logo.svg' alt='pinafrica' />
+            </figure>
+          </div>
         </div>
-        </>
-    )
+      </section>
+    </>
+  )
 }
 export default Header
