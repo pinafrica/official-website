@@ -50,20 +50,20 @@ export default function Home () {
           <div className='column'>
             <data
               id='mj-w-res-data'
-              data-token='77c2a631a38830789838537abe034582'
+              data-token='b412de5e7d84f5d3b1d476b0765deac0'
               className='mj-w-data'
               data-apikey='5htx'
               data-w-id='GIU'
               data-lang='en_US'
               data-base='https://app.mailjet.com'
-              data-width='640'
-              data-height='581'
+              data-width='760'
+              data-height='600'
               data-statics='statics'
             ></data>
 
             <button
               className='mj-w-button mj-w-btn button widget-button'
-              data-token='77c2a631a38830789838537abe034582'
+              data-token='b412de5e7d84f5d3b1d476b0765deac0'
             >LEARN MORE
             </button>
           </div>
