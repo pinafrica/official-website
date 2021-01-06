@@ -11172,12 +11172,11 @@ a.navbar-item,
 
 body {
   font-family: 'Roboto';
-  color: #000000; }
-
-.container {
+  color: #000000;
   background-image: url("../../../../public/static/background-image.svg");
-  background-size: 100vh;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .widget-button {
   background-color: #732CCD;
@@ -11190,20 +11189,64 @@ body {
   font-size: 1rem;
   border: none; }
 
-.main {
-  margin-top: -3rem; }
+@media screen and (min-width: 769px), print {
+  .main {
+    width: 362px;
+    margin-top: 230px; }
+    .main h2, .main p {
+      text-align: left !important; }
+    .main #h2-hello {
+      position: absolute;
+      width: 62px;
+      height: 36px;
+      left: 80px;
+      top: 428px; }
+    .main hr {
+      position: absolute;
+      width: 57px;
+      left: 82px;
+      top: -8px;
+      border: 1px solid #000000; }
+    .main #we-are {
+      font-size: 36px !important;
+      line-height: 150%; }
+    .main #garage-phase {
+      font-size: 72px !important; }
+    .main .column {
+      margin: 0 !important;
+      padding: 0 !important; } }
+    @media screen and (min-width: 769px) and (min-width: 769px), print {
+      .main .column .button {
+        position: absolute;
+        width: 228px; } }
 
 .logo img {
-  width: 60%;
+  width: 222px;
   margin: auto; }
+  @media screen and (min-width: 769px), print {
+    .logo img {
+      margin-left: 0%;
+      margin-top: -2.5rem; } }
 
 /** footer style **/
 .page-footer {
-  margin: 0 auto;
   padding: 2rem 0;
   text-align: center;
   display: table; }
+  @media screen and (max-width: 768px) {
+    .page-footer {
+      margin: 0 auto; } }
   .page-footer .footer-icons {
     margin: 0 0 1rem 0; }
+    @media screen and (min-width: 769px), print {
+      .page-footer .footer-icons {
+        margin-left: -20px;
+        padding-top: 45px; } }
   .page-footer .footer-social_media {
     margin: .5rem; }
+  @media screen and (min-width: 769px), print {
+    .page-footer #footer-copyright {
+      background-color: #ffffff69;
+      left: 50%;
+      position: absolute;
+      padding: .2rem; } }

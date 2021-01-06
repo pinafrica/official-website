@@ -29,7 +29,9 @@ const Footer = () => {
           <img src='./static/instagram.svg' alt='Instagram Pinafrica' />
         </a>
       </div>
-      <span> &copy; PINAFRICA 2020</span>
+      <div className="is-centered has-text-centered" id="footer-copyright">
+        <span> &copy; PINAFRICA 2020</span>
+      </div>
     </section>
   )
 }

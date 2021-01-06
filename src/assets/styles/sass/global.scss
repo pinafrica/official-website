@@ -36,12 +36,10 @@ $input-shadow: none;
 body {
     font-family: 'Roboto';
     color: #000000;
-}
-
-.container {
     background-image: url('../../../../public/static/background-image.svg');
-    background-size: 100vh;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .widget-button {
@@ -57,26 +55,86 @@ body {
 }
 
 .main {
-    margin-top: -3rem;
+   
+    @include tablet{
+        width: 362px;
+        margin-top: 230px;
+        h2, p{
+           text-align: left !important; 
+        }
+        #h2-hello{
+            position: absolute;
+            width: 62px;
+            height: 36px;
+            left: 80px;
+            top: 428px;
+        }
+        hr{
+            position: absolute;
+            width: 57px;
+            left: 82px;
+            top: -8px;
+            border: 1px solid #000000;
+        }
+        #we-are{
+            font-size: 36px !important;
+            line-height: 150%;
+        }
+        #garage-phase{
+            font-size: 72px !important;
+        }
+        .column{
+            margin: 0 !important;
+            padding: 0 !important;
+
+            .button{
+                @include tablet{
+                    position: absolute;
+                    width: 228px;   
+                }
+            }
+        }
+    }
 }
 
 .logo img {
-    width: 60%;
+    width: 222px;
     margin: auto;
+
+    @include tablet{
+        margin-left: 0%;
+        margin-top: -2.5rem;
+    }
 }
 
 /** footer style **/
 .page-footer{
-    margin: 0 auto;
+    @include mobile{
+        margin: 0 auto;
+    }
     padding: 2rem 0;
     text-align: center;
     display: table;
 
         .footer-icons{
             margin: 0 0 1rem 0;
+
+            @include tablet{
+                margin-left: -20px;
+                padding-top: 45px;
+            }
         }
 
         .footer-social_media{
                 margin: .5rem;
+        }
+
+        #footer-copyright{
+            @include tablet{
+                background-color: #ffffff69;
+                left: 50%;
+                position: absolute;
+                padding: .2rem;
+            }
         }
 }
