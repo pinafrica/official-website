@@ -51,6 +51,7 @@ body {
     margin: 0 auto;
     padding: 01rem 0rem;
     font-size: 1rem;
+    font-family: $family-dosis;
     border: none;
 }
 
@@ -90,7 +91,8 @@ body {
             .button{
                 @include tablet{
                     position: absolute;
-                    width: 228px;   
+                    width: 228px;
+                    margin: 20px 0;
                 }
             }
         }
@@ -115,13 +117,18 @@ body {
     padding: 2rem 0;
     text-align: center;
     display: table;
+    font-family: $family-dosis;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
 
         .footer-icons{
             margin: 0 0 1rem 0;
 
             @include tablet{
                 margin-left: -20px;
-                padding-top: 45px;
+                margin-top: 70px;
             }
         }
 

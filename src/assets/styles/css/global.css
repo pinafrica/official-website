@@ -11187,6 +11187,7 @@ body {
   margin: 0 auto;
   padding: 01rem 0rem;
   font-size: 1rem;
+  font-family: "Dosis", sans-serif;
   border: none; }
 
 @media screen and (min-width: 769px), print {
@@ -11218,7 +11219,8 @@ body {
     @media screen and (min-width: 769px) and (min-width: 769px), print {
       .main .column .button {
         position: absolute;
-        width: 228px; } }
+        width: 228px;
+        margin: 20px 0; } }
 
 .logo img {
   width: 222px;
@@ -11232,7 +11234,12 @@ body {
 .page-footer {
   padding: 2rem 0;
   text-align: center;
-  display: table; }
+  display: table;
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%; }
   @media screen and (max-width: 768px) {
     .page-footer {
       margin: 0 auto; } }
@@ -11241,7 +11248,7 @@ body {
     @media screen and (min-width: 769px), print {
       .page-footer .footer-icons {
         margin-left: -20px;
-        padding-top: 45px; } }
+        margin-top: 70px; } }
   .page-footer .footer-social_media {
     margin: .5rem; }
   @media screen and (min-width: 769px), print {
