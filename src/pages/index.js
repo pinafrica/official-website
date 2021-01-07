@@ -10,16 +10,18 @@ export default function Home () {
         <div className='columns is-centered is-mobile main-intro'>
           <div className='column'>
             <h2
+              id="h2-hello"
               className='is-size-4 has-text-weight-medium has-text-centered'
               style={{ fontFamily: 'Dosis' }}
             >
-              HELLO
+              HELLO <hr />
             </h2>
-            <p className='has-text-centered has-text-weight-medium is-size-5 mt-3'>
+            <p className='has-text-centered has-text-weight-medium is-size-5 mt-3' id="we-are">
               We are in our
             </p>
             <h2
               className='is-size-1 has-text-centered'
+              id="garage-phase"
               style={{ fontFamily: 'Great Vibes' }}
             >
               Garage Phase
