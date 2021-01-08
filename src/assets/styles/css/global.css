@@ -11190,6 +11190,9 @@ body {
   font-family: "Dosis", sans-serif;
   border: none; }
 
+.main hr {
+  visibility: hidden; }
+
 @media screen and (min-width: 769px), print {
   .main {
     width: 362px;
@@ -11207,7 +11210,8 @@ body {
       width: 57px;
       left: 82px;
       top: -8px;
-      border: 1px solid #000000; }
+      border: 1px solid #000000;
+      visibility: visible; }
     .main #we-are {
       font-size: 36px !important;
       line-height: 150%; }
