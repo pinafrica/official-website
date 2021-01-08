@@ -56,7 +56,9 @@ body {
 }
 
 .main {
-   
+   hr{
+       visibility: hidden;
+   }
     @include tablet{
         width: 362px;
         margin-top: 230px;
@@ -76,6 +78,7 @@ body {
             left: 82px;
             top: -8px;
             border: 1px solid #000000;
+            visibility: visible;
         }
         #we-are{
             font-size: 36px !important;
