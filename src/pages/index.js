@@ -10,16 +10,18 @@ export default function Home () {
         <div className='columns is-centered is-mobile main-intro'>
           <div className='column'>
             <h2
+              id="h2-hello"
               className='is-size-4 has-text-weight-medium has-text-centered'
               style={{ fontFamily: 'Dosis' }}
             >
-              HELLO
+              HELLO <hr />
             </h2>
-            <p className='has-text-centered has-text-weight-medium is-size-5 mt-3'>
+            <p className='has-text-centered has-text-weight-medium is-size-5 mt-3' id="we-are">
               We are in our
             </p>
             <h2
               className='is-size-1 has-text-centered'
+              id="garage-phase"
               style={{ fontFamily: 'Great Vibes' }}
             >
               Garage Phase
@@ -50,20 +52,20 @@ export default function Home () {
           <div className='column'>
             <data
               id='mj-w-res-data'
-              data-token='77c2a631a38830789838537abe034582'
+              data-token='b412de5e7d84f5d3b1d476b0765deac0'
               className='mj-w-data'
               data-apikey='5htx'
               data-w-id='GIU'
               data-lang='en_US'
               data-base='https://app.mailjet.com'
-              data-width='640'
-              data-height='581'
+              data-width='760'
+              data-height='600'
               data-statics='statics'
             ></data>
 
             <button
               className='mj-w-button mj-w-btn button widget-button'
-              data-token='77c2a631a38830789838537abe034582'
+              data-token='b412de5e7d84f5d3b1d476b0765deac0'
             >LEARN MORE
             </button>
           </div>
