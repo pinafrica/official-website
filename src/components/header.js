@@ -16,7 +16,7 @@ const Header = () => {
         <div className='columns is-centered'>
           <div className='column mt-6'>
             <figure className='image logo'>
-              <img src='./static/logo.svg' alt='pinafrica' />
+              <img src='./img/logo.svg' alt='pinafrica' />
             </figure>
           </div>
         </div>

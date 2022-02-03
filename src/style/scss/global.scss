@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "../../../../node_modules/bulma/bulma.sass";
+@import "./../../../node_modules/bulma/bulma.sass";
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
@@ -23,20 +23,20 @@ $input-border-color: transparent;
 $input-shadow: none;
 
 // What we need from Bulma - We can remove the ones we don't needd
-@import "../../../../node_modules/bulma/sass/utilities/_all.sass";
-@import "../../../../node_modules/bulma/sass/base/_all.sass";
-@import "../../../../node_modules/bulma/sass/elements/button.sass";
-@import "../../../../node_modules/bulma/sass/elements/container.sass";
-@import "../../../../node_modules/bulma/sass/elements/title.sass";
-@import "../../../../node_modules/bulma/sass/form/_all.sass";
-@import "../../../../node_modules/bulma/sass/components/navbar.sass";
-@import "../../../../node_modules/bulma/sass/layout/hero.sass";
-@import "../../../../node_modules/bulma/sass/layout/section.sass";
+@import "./../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "./../../../node_modules/bulma/sass/base/_all.sass";
+@import "./../../../node_modules/bulma/sass/elements/button.sass";
+@import "./../../../node_modules/bulma/sass/elements/container.sass";
+@import "./../../../node_modules/bulma/sass/elements/title.sass";
+@import "./../../../node_modules/bulma/sass/form/_all.sass";
+@import "./../../../node_modules/bulma/sass/components/navbar.sass";
+@import "./../../../node_modules/bulma/sass/layout/hero.sass";
+@import "./../../../node_modules/bulma/sass/layout/section.sass";
 
 body {
     font-family: 'Roboto';
     color: #000000;
-    background-image: url('../../../../public/static/background-image.svg');
+    background-image: url('./../../../static/img/background-image.svg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@ body {
     background-color: $purple;
     color: $white !important;
     display: block;
-    width: 250px;
+    width: 15.625rem;
     height: 3.2rem;
     margin: 0 auto;
     padding: 01rem 0rem;
@@ -55,37 +55,41 @@ body {
     border: none;
 }
 
+.container {
+  height: fit-content;
+}
+
 .main {
    hr{
        visibility: hidden;
    }
     @include tablet{
-        width: 362px;
-        margin-top: 230px;
+        width: 22.625rem;
+        margin-top: 8.75rem;
         h2, p{
            text-align: left !important; 
         }
         #h2-hello{
             position: absolute;
-            width: 62px;
-            height: 36px;
-            left: 80px;
-            top: 428px;
+            width: 3.875rem;
+            height: 2.25rem;
+            left: 5rem;
+            top: 21.375rem;
         }
         hr{
             position: absolute;
-            width: 57px;
-            left: 82px;
-            top: -8px;
+            width: 3.563rem;
+            left: 5.125rem;
+            top: - 0.5rem;
             border: 1px solid #000000;
             visibility: visible;
         }
         #we-are{
-            font-size: 36px !important;
+            font-size: 2.25rem !important;
             line-height: 150%;
         }
         #garage-phase{
-            font-size: 72px !important;
+            font-size: 4.5rem !important;
         }
         .column{
             margin: 0 !important;
@@ -94,8 +98,8 @@ body {
             .button{
                 @include tablet{
                     position: absolute;
-                    width: 228px;
-                    margin: 20px 0;
+                    width: 14.25rem;
+                    margin: 1.25rem 0;
                 }
             }
         }
@@ -103,7 +107,7 @@ body {
 }
 
 .logo img {
-    width: 222px;
+    width: 13.875rem;
     margin: auto;
 
     @include tablet{
@@ -123,15 +127,15 @@ body {
     font-family: $family-dosis;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 130%;
 
         .footer-icons{
             margin: 0 0 1rem 0;
 
             @include tablet{
-                margin-left: -20px;
-                margin-top: 70px;
+                margin-left: -1.25rem;
+                margin-top: 4.375rem;
             }
         }
 
