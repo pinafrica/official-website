@@ -8,25 +8,25 @@ const Footer = () => {
           href='https://web.facebook.com/pinafricadotorg'
           className='footer-social_media'
         >
-          <img src='./static/facebook.svg' alt='Facebook Pinafrica' />
+          <img src='./img/facebook.svg' alt='Facebook Pinafrica' />
         </a>
         <a
           href='https://twitter.com/pinafricadotorg'
           className='footer-social_media'
         >
-          <img src='./static/twitter.svg' alt='Twitter Pinafrica' />
+          <img src='./img/twitter.svg' alt='Twitter Pinafrica' />
         </a>
         <a
           href='https://www.linkedin.com/company/pinafricadotorg'
           className='footer-social_media'
         >
-          <img src='./static/linkedin.svg' alt='Linkedin Pinafrica' />
+          <img src='./img/linkedin.svg' alt='Linkedin Pinafrica' />
         </a>
         <a
           href='https://www.instagram.com/pinafricadotorg/'
           className='footer-social_media'
         >
-          <img src='./static/instagram.svg' alt='Instagram Pinafrica' />
+          <img src='./img/instagram.svg' alt='Instagram Pinafrica' />
         </a>
       </div>
       <div className="is-centered has-text-centered" id="footer-copyright">

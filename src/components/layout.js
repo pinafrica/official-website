@@ -3,7 +3,6 @@ import Header from './header'
 import Footer from './footer'
 
 const Layout = ({ children }) => {
-  console.log(children.backgound)
   return (
     <div className='container'>
       <Header />
