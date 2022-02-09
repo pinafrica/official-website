@@ -4,7 +4,7 @@ on:
     branches:
       - production
 jobs:
-  Explore-GitHub-Actions:
+  Deploy to production:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,5 +29,5 @@ jobs:
           port: ${{ secrets.ftp_port }}
           local-dir: './public/'
           server-dir: 'www/pinafrica.org/'
-          dry-run: true
+          dry-run: false
           log-level: verbose
