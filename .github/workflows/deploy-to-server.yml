@@ -14,7 +14,10 @@ jobs:
         with:
           node-version: '14.15.3'
           cache: 'npm'
-      - run: npm install
+      - name: Install dependencies
+        run: npm ci
+      - name: Install gatsby CLI
+        run: npm install -g gatsby-cli
       - name: Build gatsby resources
         run: gatsby build
       - name: Deploy to server
